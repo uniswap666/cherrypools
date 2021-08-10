@@ -1,0 +1,831 @@
+
+body {
+    background: #f6f6f6;
+}
+
+.header-pc {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: top 0.2s ease 0s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 16px;
+    width: 100%;
+    height: 64px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(133, 133, 133, 0.1);
+    z-index: 20;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.header-pc-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-pc-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "SourceHanSans-Bold, Source Han Sans";
+    font-size: 20px;
+    font-weight: bold;
+    color: #25030A;
+}
+
+.header-pc-logo a > span {
+    margin-left: 4px;
+}
+
+.desktop-icon {
+    width: 156px;
+}
+
+.header-pc-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-pc-connect {
+    height: 40px;
+    align-items: center;
+    background-color: rgb(229, 82, 104);
+    border: 0px;
+    border-radius: 116px;
+    box-shadow: 0px 0px 2px #d0d0d0;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    width: max-content;
+    height: 32px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    justify-content: center;
+    outline: 0px;
+    padding: 0px 16px;
+    transition: background-color 0.2s ease 0s;
+    opacity: 1;
+}
+
+.header-pc-connect:hover {
+    background-color: rgb(235, 109, 128);
+}
+
+.connect-modal {
+    width: auto;
+    min-width: 360px;
+    max-width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px #d0d0d0;
+    border: 1px solid rgb(233, 234, 235);
+    border-radius: 30px;
+    width: 100%;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.connect-modal-header {
+    display: flex;
+    border-bottom: 1px solid rgb(233, 234, 235);
+    align-items: center;
+    padding: 12px 10px 12px 24px;
+}
+
+.connect-modal-header-title {
+    align-items: center;
+    flex: 1 1 0%;
+    display: flex;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.connect-modal-header-close {
+    padding: 0px;
+    margin-right: 20px;
+    width: 20px;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: transparent;
+    color: rgb(229, 82, 104);
+    box-shadow: none;
+}
+
+.connect-modal-header-close svg {
+    fill: rgb(229, 82, 104);
+    flex-shrink: 0;
+}
+
+.connect-modal-header-close:hover svg {
+    fill: rgb(235, 109, 128);
+}
+
+.connect-modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 30px;
+}
+
+.connect-modal-content-item {
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(239, 244, 245);
+    box-shadow: none;
+    color: rgb(229, 82, 104);
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: rgb(249, 247, 248);
+    justify-content: space-between;
+}
+
+.connect-modal-content-item:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.pool-list {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.pool-list-item {
+    margin-bottom: 20px;
+}
+
+.pool {
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex;
+    color: rgb(229, 82, 104);
+    box-shadow: 0px 0px 2px #d0d0d0;
+    flex-direction: column;
+    position: relative;
+}
+
+.pool-1 {
+    padding: 24px;
+}
+
+.pool-name {
+    color: rgb(37, 3, 10);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 14px;
+}
+
+.pool-logo {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.pool-logo-1 {
+    flex: 1 1 0%;
+}
+
+.pool-logo-images {
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+    .pool-logo-images img {
+        position: absolute;
+    }
+
+    .pool-logo-images img:last-child {
+        bottom: 0px;
+        right: 0px;
+        border-radius: 50%;
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+.pool-reward {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pool-reward-1 {
+    color: rgb(37, 3, 10);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 32px;
+}
+
+.pool-reward-tip {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(142, 143, 153);
+    line-height: 16px;
+}
+
+.pool-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.pool-info-apr {
+    color: rgb(37, 3, 10);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.pool-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.pool-user-tip {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(142, 143, 153);
+    line-height: 16px;
+}
+
+.pool-user-deposit {
+    color: rgb(37, 3, 10);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.pool-2 {
+    border-top: 1px solid rgb(233, 234, 235);
+    padding: 24px;
+}
+
+.pool-deposit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.pool-deposit-tip {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(142, 143, 153);
+    line-height: 16px;
+}
+
+.pool-deposit-font {
+    color: rgb(37, 3, 10);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.pool-contract {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(229, 82, 104);
+    line-height: 16px;
+}
+
+.pool-contract:hover {
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(229, 82, 104);
+    line-height: 16px;
+}
+
+.pool-control {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pool-control-connect {
+    width: 100%;
+    border-radius: 100px;
+    align-items: center;
+    border: 0px;
+    box-shadow: 0px 0px 2px #d0d0d0;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(229, 82, 104);
+    color: white;
+}
+
+.pool-control-connect:hover {
+    background-color: rgb(235, 109, 128);
+}
+
+.pool-control-approve {
+    width: 100%;
+    border-radius: 100px;
+    align-items: center;
+    border: 0px;
+    box-shadow: 0px 0px 2px #d0d0d0;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(229, 82, 104);
+    color: white;
+}
+
+.pool-control-approve:hover {
+    background-color: rgb(235, 109, 128);
+}
+
+.pool-control-deposit-withdraw {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pool-control-withdraw-btn {
+    border-radius: 100px;
+    box-shadow: 0px 0px 2px #d0d0d0;
+    align-items: center;
+    border: 0px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(229, 82, 104);
+    color: white;
+}
+
+.pool-control-withdraw-btn:hover {
+    background-color: rgb(235, 109, 128);
+}
+
+.pool-control-withdraw-btn[disabled] {
+    background-color: rgb(233, 234, 235);
+    border-color: rgb(233, 234, 235);
+    box-shadow: none;
+    color: rgb(189, 194, 196);
+    cursor: not-allowed;
+}
+
+.pool-control-deposit-btn {
+    border-radius: 100px;
+    background: rgb(255, 236, 239);
+    box-shadow: 0px 0px 2px #d0d0d0;
+    width: 48px;
+    height: 48px;
+    padding: 0px;
+    width: 48px;
+    align-items: center;
+    border: 0px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    color: white;
+}
+
+.pool-control-deposit-btn:hover {
+    background-color: rgb(255, 246, 239);
+}
+
+.pool-control-deposit-btn svg {
+    fill: rgb(229, 82, 104);
+    flex-shrink: 0;
+}
+
+.withdraw-modal {
+    width: auto;
+    min-width: 360px;
+    max-width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px #d0d0d0;
+    border: 1px solid rgb(233, 234, 235);
+    border-radius: 30px;
+    width: 100%;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.withdraw-modal-header {
+    display: flex;
+    border-bottom: 1px solid rgb(233, 234, 235);
+    align-items: center;
+    padding: 12px 10px 12px 24px;
+}
+
+.withdraw-modal-header-title {
+    align-items: center;
+    flex: 1 1 0%;
+    display: flex;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.withdraw-modal-header-close {
+    padding: 0px;
+    margin-right: 20px;
+    width: 20px;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: transparent;
+    color: rgb(229, 82, 104);
+    box-shadow: none;
+}
+
+.withdraw-modal-header-close svg {
+    fill: rgb(229, 82, 104);
+    flex-shrink: 0;
+}
+
+.withdraw-modal-header-close:hover svg {
+    fill: rgb(235, 109, 128);
+}
+
+.withdraw-modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 30px;
+}
+
+.withdraw-modal-deposit-tip {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 21px;
+    margin-bottom: 8px;
+    color: rgb(229, 82, 104);
+}
+
+.withdraw-modal-form {
+    display: flex;
+    align-items: center;
+}
+
+.withdraw-modal-form input {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(229, 82, 104);
+    border-radius: 16px;
+    color: rgb(37, 3, 10);
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    outline: 0px;
+    padding: 0px 16px;
+    width: 100%;
+}
+
+.withdraw-modal-right {
+    display: flex;
+    align-items: center;
+}
+
+.withdraw-modal-right-symbol {
+    color: rgb(229, 82, 104);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.withdraw-modal-right-max {
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 2px #d0d0d0;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: rgb(229, 82, 104);
+    color: white;
+}
+
+.withdraw-modal-btns {
+    margin-top: 20px;
+}
+
+.withdraw-modal-btn {
+    width: 100%;
+    border-radius: 100px;
+    align-items: center;
+    border: 0px;
+    box-shadow: 0px 0px 2px #d0d0d0;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(229, 82, 104);
+    color: white;
+}
+
+.withdraw-modal-btn:hover {
+    background-color: rgb(235, 109, 128);
+}
+
+.withdraw-modal-btn[disabled] {
+    background-color: rgb(233, 234, 235);
+    border-color: rgb(233, 234, 235);
+    box-shadow: none;
+    color: rgb(189, 194, 196);
+    cursor: not-allowed;
+}
+
+.deposit-modal {
+    width: auto;
+    min-width: 360px;
+    max-width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px #d0d0d0;
+    border: 1px solid rgb(233, 234, 235);
+    border-radius: 30px;
+    width: 100%;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.deposit-modal-header {
+    display: flex;
+    border-bottom: 1px solid rgb(233, 234, 235);
+    align-items: center;
+    padding: 12px 10px 12px 24px;
+}
+
+.deposit-modal-header-title {
+    align-items: center;
+    flex: 1 1 0%;
+    display: flex;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.deposit-modal-header-close {
+    padding: 0px;
+    margin-right: 20px;
+    width: 20px;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: transparent;
+    color: rgb(229, 82, 104);
+    box-shadow: none;
+}
+
+.deposit-modal-header-close svg {
+    fill: rgb(229, 82, 104);
+    flex-shrink: 0;
+}
+
+.deposit-modal-header-close:hover svg {
+    fill: rgb(235, 109, 128);
+}
+
+.deposit-modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 30px;
+}
+
+.deposit-modal-deposit-tip {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 21px;
+    margin-bottom: 8px;
+    color: rgb(229, 82, 104);
+}
+
+.deposit-modal-form {
+    display: flex;
+    align-items: center;
+}
+
+.deposit-modal-form input {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(229, 82, 104);
+    border-radius: 16px;
+    color: rgb(37, 3, 10);
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    outline: 0px;
+    padding: 0px 16px;
+    width: 100%;
+}
+
+.deposit-modal-right {
+    display: flex;
+    align-items: center;
+}
+
+.deposit-modal-right-symbol {
+    color: rgb(229, 82, 104);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.deposit-modal-right-max {
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 2px #d0d0d0;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: rgb(229, 82, 104);
+    color: white;
+}
+
+.deposit-modal-btns {
+    margin-top: 20px;
+}
+
+.deposit-modal-btn {
+    width: 100%;
+    border-radius: 100px;
+    align-items: center;
+    border: 0px;
+    box-shadow: 0px 0px 2px #d0d0d0;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s;
+    height: 48px;
+    padding: 0px 24px;
+    background-color: rgb(229, 82, 104);
+    color: white;
+}
+
+.deposit-modal-btn:hover {
+    background-color: rgb(235, 109, 128);
+}
+
+.deposit-modal-btn[disabled] {
+    background-color: rgb(233, 234, 235);
+    border-color: rgb(233, 234, 235);
+    box-shadow: none;
+    color: rgb(189, 194, 196);
+    cursor: not-allowed;
+}
+
+.manual {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    display: flex;
+    color: rgb(229, 82, 104);
+    box-shadow: 0px 0px 2px #d0d0d0;
+}
+
+.manual div {
+    padding: 20px;
+    width: 100%;
+}
+
+.manual div h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
