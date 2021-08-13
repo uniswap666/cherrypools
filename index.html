@@ -31,12 +31,192 @@
     </div>
 </div>
 <div class="list">
-    <div id="PoolList"></div>
+    <div class="loading"  style="display: none">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="60px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve">
+                <path fill="#2C6FFF" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)">
+                    <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform>
+                </path>
+            </svg>
+    </div>
+    <div id="PoolList">
+        <div class="pool-item" data-pool="pool0">
+            <div class="tit">
+                <div class="pic-info">
+                    <img src="image/tokens/CHR.svg" class="token-pic-main">
+                </div>
+                <div>
+                    <div class="main-text symbol-replace">CHR</div>
+                    <div class="sub-text">
+                        存 <span class="symbol-replace">CHR</span> 赚取 <span class="symbol-replace">CHR</span>
+                    </div>
+                </div>
+            </div>
+            <div class="earn-info">
+                <div class="amount-text">
+                    <div class="earn-amount">0.000</div>
+                    <div class="tooltip">未提取收益(<span class="symbol-replace">CHR</span>)</div>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="actions-item long approve-btn" style="display: none">批准 <span class="symbol-replace">CHR</span>
+                </div>
+                <div class="actions-item long unlock-btn">解锁钱包</div>
+                <div class="actions-item withdraw-btn" style="display: none">取回 <span class="symbol-replace">CHR</span>
+                </div>
+                <div class="actions-item deposit-btn" style="display: none">存入 <span class="symbol-replace">CHR</span></div>
+            </div>
+            <div class="profit-info">
+                <div class="item">
+                    <div class="val apr" style="color: #FFAF67">0.000%</div>
+                    <div class="tit">APR</div>
+                </div>
+                <div class="item">
+                    <div class="val my-deposit">0.000</div>
+                    <div class="tit">我的质押</div>
+                </div>
+            </div>
+            <div class="pool-info">
+                <div class="item">
+                    <div class="val total_deposit">0.000</div>
+                    <div class="tit"><span>总量</span> <div class="check-pool">在 Oklink 上查看</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="pool-item" data-pool="pool1">
+            <div class="tit">
+                <div class="pic-info">
+                    <img src="./image/tokens/USDT.svg" class="token-pic-main">
+                </div>
+                <div>
+                    <div class="main-text symbol-replace">USDT</div>
+                    <div class="sub-text">
+                        存 <span class="symbol-replace">USDT</span> 赚取 <span class="symbol-replace">USDT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="earn-info">
+                <div class="amount-text">
+                    <div class="earn-amount">0.000</div>
+                    <div class="tooltip">未提取收益(<span class="symbol-replace">USDT</span>)</div>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="actions-item long approve-btn" style="display: none">批准 <span class="symbol-replace">USDT</span>
+                </div>
+                <div class="actions-item long unlock-btn">解锁钱包</div>
+                <div class="actions-item withdraw-btn" style="display: none">取回 <span class="symbol-replace">USDT</span>
+                </div>
+                <div class="actions-item deposit-btn" style="display: none">存入 <span class="symbol-replace">USDT</span></div>
+            </div>
+            <div class="profit-info">
+                <div class="item">
+                    <div class="val apr" style="color: #FFAF67">0.000%</div>
+                    <div class="tit">APR</div>
+                </div>
+                <div class="item">
+                    <div class="val my-deposit">0.000</div>
+                    <div class="tit">我的质押</div>
+                </div>
+            </div>
+            <div class="pool-info">
+                <div class="item">
+                    <div class="val total_deposit">0.000</div>
+                    <div class="tit"><span>总量</span> <div class="check-pool">在 Oklink 上查看</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="pool-item" data-pool="pool2">
+            <div class="tit">
+                <div class="pic-info">
+                    <img src="./image/tokens/BTCK.svg" class="token-pic-main">
+                </div>
+                <div>
+                    <div class="main-text symbol-replace">BTCK</div>
+                    <div class="sub-text">
+                        存 <span class="symbol-replace">BTCK</span> 赚取 <span class="symbol-replace">BTCK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="earn-info">
+                <div class="amount-text">
+                    <div class="earn-amount">0.000</div>
+                    <div class="tooltip">未提取收益(<span class="symbol-replace">BTCK</span>)</div>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="actions-item long approve-btn" style="display: none">批准 <span class="symbol-replace">BTCK</span>
+                </div>
+                <div class="actions-item long unlock-btn">解锁钱包</div>
+                <div class="actions-item withdraw-btn" style="display: none">取回 <span class="symbol-replace">BTCK</span>
+                </div>
+                <div class="actions-item deposit-btn" style="display: none">存入 <span class="symbol-replace">BTCK</span></div>
+            </div>
+            <div class="profit-info">
+                <div class="item">
+                    <div class="val apr" style="color: #FFAF67">0.000%</div>
+                    <div class="tit">APR</div>
+                </div>
+                <div class="item">
+                    <div class="val my-deposit">0.000</div>
+                    <div class="tit">我的质押</div>
+                </div>
+            </div>
+            <div class="pool-info">
+                <div class="item">
+                    <div class="val total_deposit">0.000</div>
+                    <div class="tit"><span>总量</span> <div class="check-pool">在 Oklink 上查看</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="pool-item" data-pool="pool3">
+            <div class="tit">
+                <div class="pic-info">
+                    <img src="./image/tokens/ETHK.svg" class="token-pic-main">
+                </div>
+                <div>
+                    <div class="main-text symbol-replace">BTCK</div>
+                    <div class="sub-text">
+                        存 <span class="symbol-replace">BTCK</span> 赚取 <span class="symbol-replace">ETHK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="earn-info">
+                <div class="amount-text">
+                    <div class="earn-amount">0.000</div>
+                    <div class="tooltip">未提取收益(<span class="symbol-replace">ETHK</span>)</div>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="actions-item long approve-btn" style="display: none">批准 <span class="symbol-replace">ETHK</span>
+                </div>
+                <div class="actions-item long unlock-btn">解锁钱包</div>
+                <div class="actions-item withdraw-btn" style="display: none">取回 <span class="symbol-replace">ETHK</span>
+                </div>
+                <div class="actions-item deposit-btn" style="display: none">存入 <span class="symbol-replace">ETHK</span></div>
+            </div>
+            <div class="profit-info">
+                <div class="item">
+                    <div class="val apr" style="color: #FFAF67">0.000%</div>
+                    <div class="tit">APR</div>
+                </div>
+                <div class="item">
+                    <div class="val my-deposit">0.000</div>
+                    <div class="tit">我的质押</div>
+                </div>
+            </div>
+            <div class="pool-info">
+                <div class="item">
+                    <div class="val total_deposit">0.000</div>
+                    <div class="tit"><span>总量</span> <div class="check-pool">在 Oklink 上查看</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="pool-item-seed" data-pool="">
     <div class="tit">
         <div class="pic-info">
-            <img src="./image/tokens/CHE.svg" class="token-pic-main">
+            <img src="image/tokens/CHR.svg" class="token-pic-main">
         </div>
         <div>
             <div class="main-text symbol-replace">CHR</div>
@@ -190,7 +370,7 @@
 <script>
 
     var connectState = false;
-    var factoryAddress = '0x79858A822668E7E1FAa62f7aef8Ad260C042a6de';
+    var factoryAddress = '0x2b6c5fFe2Ce8124B56cffB1D3f5469C7b188425C';
     var rpc = 'https://exchainrpc.okex.org';
     var approveMax = '115792089237316195423570985008687907853269984665640564039457584007913129639935'
 
@@ -200,30 +380,30 @@
         }
         var wallet = document.querySelector('[data-address]').getAttribute('data-address');
         getTokenAllowance(pid, poolInfo['token'], wallet, function (res, pid) {
-            var dom = document.querySelector('.pool-item[data-pool=pool' + pid + ']');
-            if (res === '0') {
-                dom.querySelector('.withdraw-btn').style.display = 'none';
-                dom.querySelector('.deposit-btn').style.display = 'none';
-                dom.querySelector('.approve-btn').style.display = 'block';
-            } else {
-                dom.querySelector('.withdraw-btn').style.display = 'block';
-                dom.querySelector('.deposit-btn').style.display = 'block';
-                dom.querySelector('.approve-btn').style.display = 'none';
-            }
             getPoolBalance(pid, wallet, function (res2, pid) {
+                console.log('[Allowance]',res);
+                console.log('[Balance]',res2);
+                var dom = document.querySelector('.pool-item[data-pool=pool' + pid + ']');
+                if (res === '0' && res2.amount === '0') {
+                    dom.querySelector('.withdraw-btn').style.display = 'none';
+                    dom.querySelector('.deposit-btn').style.display = 'none';
+                    dom.querySelector('.approve-btn').style.display = 'block';
+                } else {
+                    dom.querySelector('.withdraw-btn').style.display = 'block';
+                    dom.querySelector('.deposit-btn').style.display = 'block';
+                    dom.querySelector('.approve-btn').style.display = 'none';
+                }
                 if (res2.amount === '0') {
                     dom.querySelector('.withdraw-btn').setAttribute('class', 'actions-item withdraw-btn disabled');
                     dom.querySelector('.my-deposit').innerText = '0.000';
                 } else {
                     dom.querySelector('.withdraw-btn').setAttribute('class', 'actions-item withdraw-btn');
                     dom.querySelector('.my-deposit').innerText = tokenAmount(res2.amount);
-                    getPoolRework(pid, wallet, function (res3, pid) {
-                        if (res3 === '0') {
-                            dom.querySelector('.earn-amount').innerText = '0.000';
-                        } else {
-                            dom.querySelector('.earn-amount').innerText = tokenAmount(res3);
-                        }
-                    })
+                }
+                if(res2.pendingReward === '0'){
+                    dom.querySelector('.earn-amount').innerText = '0.000';
+                }else{
+                    dom.querySelector('.earn-amount').innerText = tokenAmount(res2.pendingReward);
                 }
             })
         })
@@ -275,16 +455,6 @@
         }
     }
 
-    function getPoolRework(poolId, wallet, cb) {
-        var web3 = new Web3(rpc);
-        var factory = new web3.eth.Contract(window.abis.factory, factoryAddress);
-        factory.methods.pendingReward(poolId, wallet).call().then(function (res) {
-            if (cb) {
-                cb(res, poolId)
-            }
-        });
-    }
-
     function getPoolBalance(pid, wallet, cb) {
         var web3 = new Web3(rpc);
         var coin = new web3.eth.Contract(window.abis.factory, factoryAddress);
@@ -310,6 +480,7 @@
         var web3 = new Web3(rpc);
         var coin = new web3.eth.Contract(window.abis.token, tokenAddress);
         coin.methods.allowance(wallet, factoryAddress).call().then(function (res) {
+            console.log('allowance',res)
             if (cb) {
                 cb(res, pid)
             }
@@ -424,27 +595,23 @@
         console.log('[ofram]update all pool');
         var web3 = new Web3(rpc);
         var factory = new web3.eth.Contract(window.abis.factory, factoryAddress);
-        factory.methods.poolLength().call()
-            .then(function (length) {
-                for (var i = 0; i < Number(length); i++) {
-                    factory.methods.poolInfo(i).call()
-                        .then(function (res) {
-                            if (!ifUpdate) {
-                                window.pool_info.push(res);
-                            }
-                            var id = getPidFromPoolInfo(res);
-                            buildPoolItem(id, res, ifUpdate);
-                            if (cb) {
-                                cb(id, res)
-                            }
-                        })
-                }
-            })
-
+        for(var i in window.pool_info){
+            factory.methods.poolInfo(Number(i)).call()
+                .then(function (res) {
+                    console.log('...res',res)
+                    var id = getPidFromPoolInfo(res);
+                    window.pool_info[id]['totalDeposit'] = res['totalDeposit']
+                    window.pool_info[id]['pendingReward'] = res['pendingReward']
+                    buildPoolItem(id, window.pool_info[id], true);
+                    if (cb) {
+                        cb(id, res)
+                    }
+                })
+        }
     }
 
     function getPidFromPoolInfo(res) {
-        for (var i = 0; i < window.pool_info.length; i++) {
+        for (var i  in  window.pool_info) {
             if (res['token'] === window.pool_info[i]['token']) {
                 return i
             }
@@ -453,6 +620,7 @@
     }
 
     function buildPoolItem(pid, pool_info, ifUpdate) {
+        document.querySelector('.loading').style.display = 'none';
         var dom
         if (ifUpdate) {
             dom = document.querySelector('.pool-item[data-pool=pool' + pid + ']');
@@ -462,7 +630,7 @@
         dom.setAttribute('data-pool', 'pool' + pid.toString());
         dom.setAttribute('class', 'pool-item');
         dom.querySelector('.token-pic-main').setAttribute('src', './image/tokens/' + window.tokens[pool_info['token']] + '.svg');
-        dom.querySelector('.total_deposit').innerHTML = tokenAmount(new BigNumber(pool_info['totalDeposit']).plus(pool_info['totalReward']).valueOf());
+        dom.querySelector('.total_deposit').innerHTML = tokenAmount(new BigNumber(pool_info['totalDeposit']).plus(pool_info['pendingReward']).valueOf());
         if (!ifUpdate) {
             dom.querySelector('.approve-btn').onclick = function () {
                 if (!window.connectState) {
@@ -627,6 +795,8 @@
             dom.querySelector('.symbol-main').innerText = symbol;
             dom.querySelector('.num_input').value = '';
             dom.querySelector('.ok').setAttribute('class', 'actions-item ok disabled');
+            dom.querySelector('.input-max').setAttribute('data-max','0');
+            dom.querySelector('.max-amount').innerText = 0;
             dom.style.display = 'block';
             var wallet = document.querySelector('#WalletInfo .address-info .address').getAttribute('data-address');
             getPoolBalance(poolId, wallet, function (res, poolAddress) {
@@ -637,12 +807,14 @@
                 } else {
                     dom.querySelector('.withdraw-btn').setAttribute('class', 'actions-item withdraw-btn');
                     dom.querySelector('.my-deposit').innerText = tokenAmount(res.amount);
+                    document.querySelector('#WithdrawAction .input-max').setAttribute('data-max',res.amount);
+                    document.querySelector('#WithdrawAction .max-amount').innerText = new BigNumber(res.amount).dividedBy(1e18).toFormat();
                 }
-                getPoolRework(poolId, wallet, function (res2, pid) {
-                    var dom2 = document.getElementById('WithdrawAction');
-                    dom2.querySelector('.max-amount').innerText = new BigNumber(res.amount).plus(res2).dividedBy(1e18).valueOf();
-                    dom2.querySelector('.input-max').setAttribute('data-max', new BigNumber(res.amount).plus(res2));
-                })
+                if(res.pendingReward === '0'){
+                    dom.querySelector('.earn-amount').innerText = '0.000';
+                }else{
+                    dom.querySelector('.earn-amount').innerText = tokenAmount(res.pendingReward);
+                }
             })
         }
     }
@@ -659,6 +831,8 @@
             dom.querySelector('.num_input').value = '';
             dom.querySelector('.ok').setAttribute('class', 'actions-item ok disabled');
             dom.querySelector('.approve').innerText = '批准';
+            dom.querySelector('.input-max').setAttribute('data-max','0');
+            dom.querySelector('.max-amount').innerText = 0;
             dom.style.display = 'block';
             var wallet = document.querySelector('#WalletInfo .address-info .address').getAttribute('data-address');
             getTokenAllowance(poolId, window.pool_info[poolId]['token'], wallet, function (res, pid) {
@@ -671,8 +845,8 @@
                 }
                 dom.querySelector('.input-max').setAttribute('data-approve-amount', res);
                 getTokenBalance(window.pool_info[pid]['token'], wallet, function (res2, tokenAddress) {
-                    console.log('[getTokenBalance]', res)
-                    dom.querySelector('.max-amount').innerText = new BigNumber(res2).dividedBy(1e18);
+                    console.log('[getTokenBalance]', res2)
+                    dom.querySelector('.max-amount').innerText = new BigNumber(res2).dividedBy(1e18).toFormat();
                     dom.querySelector('.input-max').setAttribute('data-max', res2);
                 })
             })
@@ -729,13 +903,20 @@
         for (var i = 0; i < btns.length; i++) {
             btns[i].style.display = 'none'
         }
-        for (var e = 0; e < window.pool_info.length; e++) {
-            checkPoolForUser(e, window.pool_info[e]);
+        for(var e in window.pool_info){
+            checkPoolForUser(Number(e), window.pool_info[e]);
         }
     }
 
     function ConnectWallet(accounts) {
         console.log('ConnectWallet', accounts)
+        if (window.provider.chainId !== '0x42' && window.provider.chainId !== 66) {
+            console.log('chian id error')
+            showTips('warn', '请切换网络至 OKExChain mainnet');
+            userDisconnect();
+            document.getElementById('SelectWallet').style.display = 'none';
+            return
+        }
         if (window.provider.isMetaMask) {
             window.provider
                 .request({method: 'eth_requestAccounts'})
@@ -754,10 +935,7 @@
             showState(accounts[0])
         }
         document.querySelector('#SelectWallet').style.display = 'none';
-        if (window.provider.chainId !== '0x42' && window.provider.chainId !== 66) {
-            console.log('chian id error')
-            showTips('warn', '请切换网络至 OKExChain mainnet');
-        }
+
     }
 
     function setNetwork() {
@@ -798,8 +976,10 @@
     function handleChainChanged(chainId) {
         console.log(chainId);
         if (window.provider.chainId !== '0x42' && window.provider.chainId !== 66) {
-            console.log('chian id error');
-            showTips('warn', '请切换网络至 OKExChain mainnet。');
+            console.log('chian id error')
+            showTips('warn', '请切换网络至 OKExChain Mainnet');
+            userDisconnect();
+            document.getElementById('SelectWallet').style.display = 'none';
         }
     }
 
@@ -912,6 +1092,31 @@
         document.querySelector('#WalletInfo .go-to-explorer').onclick = function () {
             goToExplorer();
         };
+
+        var pool_item_list = document.querySelectorAll('.pool-item');
+        for(var i = 0;i< pool_item_list.length;i++){
+            pool_item_list[i].querySelector('.approve-btn').onclick = function () {
+                if (!window.connectState) {
+                    toggleSelectWindow()
+                } else {
+                    var pid = this.parentNode.parentNode.getAttribute('data-pool').split('pool')[1]
+                    approveToken(pid, pool_info[pid]['token'])
+                }
+            };
+            pool_item_list[i].querySelector('.check-pool').onclick = function () {
+                window.open("https://www.oklink.com/okexchain/address/"  + factoryAddress);
+            };
+            pool_item_list[i].querySelector('.withdraw-btn').onclick = function () {
+                var pid = this.parentNode.parentNode.getAttribute('data-pool').split('pool')[1]
+                toggleWithdrawWindow(Number(pid));
+            };
+            pool_item_list[i].querySelector('.deposit-btn').onclick = function () {
+                var pid = this.parentNode.parentNode.getAttribute('data-pool').split('pool')[1]
+                toggleDepositWindow(Number(pid))
+            };
+            pool_item_list[i].querySelector('.unlock-btn').onclick = toggleSelectWindow;
+        }
+
         document.querySelector('#WithdrawAction .num_input').oninput = function (e) {
             console.log('e.keyCode', isNaN(this.value))
             if (isNaN(this.value)) {
@@ -927,8 +1132,8 @@
         }
         document.querySelector('#WithdrawAction .input-max').onclick = function () {
             var numMax = this.getAttribute('data-max');
-            if (numMax) {
-                document.querySelector('#WithdrawAction .num_input').value = new BigNumber(numMax).dividedBy(1e18);
+            if (numMax && numMax !== '0') {
+                document.querySelector('#WithdrawAction .num_input').value = new BigNumber(numMax).dividedBy(1e18).toFormat();
                 this.parentNode.parentNode.querySelector('.ok').setAttribute('class', 'actions-item ok');
             }
         };
@@ -962,8 +1167,8 @@
         }
         document.querySelector('#DepositAction .input-max').onclick = function () {
             var numMax = this.getAttribute('data-max');
-            if (numMax) {
-                document.querySelector('#DepositAction .num_input').value = new BigNumber(numMax).dividedBy(1e18);
+            if (numMax && numMax !== '0') {
+                document.querySelector('#DepositAction .num_input').value = new BigNumber(numMax).dividedBy(1e18).toFormat();
                 var approve = document.querySelector('#DepositAction .input-max').getAttribute('data-approve-amount');
                 if (new BigNumber(numMax).isGreaterThan(approve)) {
                     this.parentNode.parentNode.querySelector('.ok').style.display = 'none';

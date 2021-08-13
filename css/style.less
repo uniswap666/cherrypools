@@ -346,6 +346,7 @@ body {
     margin-bottom: 12px;
     position: relative;
     display: block;
+    word-break: break-all;
 
     &.hide {
       transform: translateX(110%);
@@ -960,5 +961,16 @@ body {
       margin-right: 0!important;
     }
   }
+}
 
+.loading {
+    height: 500px;
+    width: 100%;
+
+    svg{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: scale(1.8) translate(-50%,-50%);
+    }
 }
