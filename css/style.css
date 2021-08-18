@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "Kanit";
-  src: url("../fonts/Kanit.ttf");
-}
 body {
   padding: 0;
   margin: 0;
@@ -138,7 +134,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  display: none;
+  z-index: 999;
 }
 #SelectWallet .sell {
   width: 100%;
@@ -205,7 +201,6 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  display: none;
 }
 #WalletInfo .sell {
   width: 100%;
@@ -441,6 +436,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  min-height: 56px;
 }
 .pool-item .actions .actions-item.withdraw-btn {
   margin-right: 24px;
@@ -614,7 +610,6 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  display: none;
 }
 #WithdrawAction .shell {
   width: 100%;
@@ -734,7 +729,6 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  display: none;
 }
 #DepositAction .approve-info {
   display: none;
@@ -763,7 +757,6 @@ body {
 #DepositAction .content-box .tit {
   font-size: 18px;
   margin-bottom: 30px;
-  text-align: center;
   color: #333;
 }
 #DepositAction .content-box .num_input {
@@ -919,4 +912,3 @@ body {
   left: 50%;
   transform: scale(1.8) translate(-50%, -50%);
 }
-/*# sourceMappingURL=style.css.map */
