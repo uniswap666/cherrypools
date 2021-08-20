@@ -890,6 +890,25 @@ body {
     width: 100% !important;
     margin-bottom: 12px;
   }
+  #WalletInfo .content-box {
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  #WalletInfo .content-box .address-info {
+    justify-content: center!important;
+  }
+  #WalletInfo .content-box .other-action {
+    justify-content: center!important;
+  }
+  #WalletInfo .content-box .connect-info {
+    flex-flow: column wrap!important;
+  }
+  #WalletInfo .content-box .connect-info .action-btn {
+    margin-top: 12px;
+    margin-left: 0;
+    margin-right: 16px;
+  }
   .pool-item .actions {
     justify-content: space-between;
   }
